@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create the HashMap configuration
+        HashMap<String, ArrayList<String>> productMap = new HashMap<>();
+
+        // Initialize and populate the dynamic list
+        ArrayList<String> iphoneModels = new ArrayList<>();
+        iphoneModels.add("iPhone 15");
+        iphoneModels.add("iPhone 16 Pro");
+
+        // Map the list object to the "Iphone" key
+        productMap.put("Iphone", iphoneModels);
+
+        // Fetch and print the array list elements directly
+        System.out.println("iPhone Models: " + productMap.get("Iphone"));
+    }
+}
